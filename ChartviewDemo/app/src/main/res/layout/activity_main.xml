@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hitendra.chartviewdemo.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="50"
+            android:id="@+id/editText" />
+
+        <com.dzaitsev.android.widget.RadarChartView
+            android:id="@+id/chartView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:padding="30dp"
+            app:axisColor="#22737b"
+            app:axisMax="100"
+            app:axisTick="15"
+            app:axisWidth="1dp"
+            app:chartColor="#C8FF4081"
+            app:chartStyle="stroke"
+            app:chartWidth="2dp"
+            app:circlesOnly="false"
+            app:endColor="#c3e3e5"
+            app:startColor="#5f9ca1"
+            app:textSize="12sp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
